@@ -21,13 +21,13 @@ after_success:
 
 # Example AWS deploy steps.
 # deploy:
-#   edge: true #Deals with a bug
+#   edge: true #force travis to use v2 of dpl script
 #   provider: elasticbeanstalk
 #   region: "us-west-2"
-#   app: "docker-react"
-#   env: "Docker-env"
+#   app: "multi-docker"
+#   env: "MultiDocker-env"
 #   bucket_name: "elasticbeanstalk-us-west-2-432432434455"
-#   bucket_path: "docker-react" # Same as app
+#   bucket_path: "docker-multi" # Same as app
 #   on:
 #     branch: master
 #   access_key_id: $AWS_ACCESS_KEY #This should come from travis. Not in SC!
