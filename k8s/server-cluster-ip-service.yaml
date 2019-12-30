@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: server-cluster-ip-service
+spec:
+  type: ClusterIP #Exposes a set of pods to other objects in the cluster
+  selector:
+    component: server
+  ports:
+    - port: 5000 #Any outside thing should use this port
+      targetPort: 5000 #Send to the same port
