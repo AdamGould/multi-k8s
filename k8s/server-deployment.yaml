@@ -37,3 +37,4 @@ spec:
                   key: PGPASSWORD
 #PGPASSWORD will need to provided as a secret and created imperitively. We cannot use a config file as this would defeat the purpose. 
 #Note: when we deploy we would manually need to add this secret.
+#Command: "kubectl create secret generic pgpassword --from-literal PGPASSWORD=mypgpassword123"
